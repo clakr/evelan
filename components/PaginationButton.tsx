@@ -15,6 +15,10 @@ const PaginationButton = ({
       className="bg-blue-400 text-white p-2 rounded-xl font-medium w-fit hover:scale-105 shadow-lg shadow-blue-300 disabled:hover:scale-100 disabled:opacity-50 disabled:cursor-not-allowed"
       disabled={disabled}
       onClick={onClick}
+      type="button"
+      aria-label={
+        intent === "next" ? "Next Page Button" : "Previous Page Button"
+      }
     >
       {intent === "next" ? (
         <svg
