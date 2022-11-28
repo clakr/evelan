@@ -8,16 +8,17 @@ const Card = ({
   user: User;
 }) => {
   return (
-    <div className="border border-slate-200 rounded-xl shadow-xl shadow-slate-200 p-6 min-h-[400px] flex flex-col justify-between">
-      <Image
-        alt={`${first_name}'s Avatar`}
-        src={avatar}
-        width={300}
-        height={300}
-        className="rounded-lg mx-auto"
-      />
-      <div className="flex flex-col justify-between">
-        <div className="text-xl flex justify-between font-bold flex-grow">
+    <div className="border border-slate-200 rounded-xl shadow-xl shadow-slate-200 p-6 flex flex-col justify-between m-4 w-[275px]">
+      <div className="min-h-[250px] relative flex-grow">
+        <Image
+          alt={`${first_name}'s Avatar`}
+          src={avatar}
+          className="rounded-lg mx-auto object-cover object-center"
+          fill
+        />
+      </div>
+      <div className="flex flex-col justify-between mt-8">
+        <div className="text-xl flex justify-between font-bold ">
           <h1>
             {first_name} {last_name}
           </h1>

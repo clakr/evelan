@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col gap-2 items-center justify-center text-2xl">
+    <div className="min-h-screen flex flex-col items-center justify-center text-2xl">
       <h1>
         Created by: <b>Clark Kenneth C. Tolosa</b>
       </h1>

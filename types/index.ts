@@ -6,7 +6,7 @@ export type User = {
   avatar: string;
 };
 
-export type Response = {
+export type Data = {
   page: number;
   per_page: number;
   total: number;
